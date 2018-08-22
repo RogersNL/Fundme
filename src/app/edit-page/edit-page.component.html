@@ -1,0 +1,22 @@
+<h4>Edit Page</h4>
+
+<label>New Page Title:</label>
+<input [(ngModel)]="selectedPage.title">
+<br>
+
+<label>New Page Description:</label>
+<input [(ngModel)]="selectedPage.description">
+<br>
+<label>New Target:</label>
+<input [(ngModel)]="selectedPage.target">
+<br>
+<label>New Currentfund:</label>
+<input [(ngModel)]="selectedPage.currentfund">
+<br>
+
+<!-- <label>New Page Description:</label>
+<input [(ngModel)]="selectedPage.description"> -->
+
+<button (click)="beginUpdatingPage(selectedPage)">Update</button>
+<hr>
+<button (click)="beginDeletingPage(selectedPage)">Delete</button>

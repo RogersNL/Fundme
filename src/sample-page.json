@@ -1,0 +1,12 @@
+{ "pages": [{
+    "title": "Fund Swati's Life",
+    "description": "A Woman's gotta eat.",
+    "target": 80000,
+    "currentFund": 30000
+  }, {
+    "title": "Fund Swati's Fun",
+    "description": "She's a Maniac, Maaaaaniac!",
+    "target": 120000,
+    "currentFund": 100
+  }]
+}

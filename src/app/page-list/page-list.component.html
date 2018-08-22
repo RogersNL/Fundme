@@ -1,0 +1,14 @@
+<h2>Fund Me</h2>
+
+<div *ngFor="let page of pages | async" class="card card-default">
+  <div class="card-body">
+    <h3 (click)="goToDetailPage(page)"><em>{{page.title}}</em> </h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{page.description}}
+      <hr>
+      Funds: {{page.currentFund}}$ / {{page.target}}$
+      <hr>
+      <app-edit-page [selectedPage]="page"></app-edit-page>
+    </div>
+  </div>
+</div>
